@@ -90,31 +90,7 @@
 
                 <h3><b>Deepchem Co., Ltd.</b></h3>
                 <h4>Python Intern</h4>
-                <li>
-                    <b>Individual project:</b> creating automatically data preparation algorithm for ORCA(A calculation software in chemistry) on server.
-                </li>
-                <li>
-                    <b>Individual project:</b> creating automatically data collection algorithm from five files we got from ORCA calculation on the server. Including data synchronization from different files and error handling. The algorithm will try to solve the problem when an error is detected.
-                </li>
-                <li>
-                    <b>Individual project:</b> writing script that collecting specified data from user-specified folder.
-                </li>
-                <li>
-                    <b>Individual project:</b> attempting to writing script that convert FUNSMILE(our company's way of naming compound structure) to SMILE(a general chemistry structure naming). Company decide to stop this project after a week.
-                </li>
-                <li>
-                    <b>Individual project:</b> writing script that could communicate with chemistry experiment equipment remotely in the lab and control them to experiment. I used SOCKET and designed an algorithm that could check two-way connections automatically.
-                </li>
-                <li>
-                    <b>Individual project:</b> testing Psi4 calculation speed on the server with different threads and memory settings. Did polyfit to find mathematical minimum time and test hypothesis and wrote reports.
-                </li> 
-                <li>
-                    <b>Individual project:</b> writing script that find missing data set in database from id queries excle. Data filtering and aligning. Extracting 3D cartesian coordinate and get SMILE with OpenBabel python package. Creat and maintain SQL database. Entract data from xyz file, excle file, and coverted SMILE and insert it in to SQL database(including checking repeating data in database).
-                </li> 
-                <li>
-                    <b>Individual project:</b> writing script that filter and classify files. ZIP choosen file type and upload them to server with POST with login and token.
-                </li> 
-                <li>
+                                <li>
                     <b>Group project:</b> create calculation task distribution systems. Work with the front end, and other co-walkers to create a web-based platform that would distribute calculation jobs from the distribution server to different calculation servers based on calculation servers status (Thread usage) and the number of threads that the user declared when submitting task. <br>I am in charge of all the work after the calculation job started. More specifically the following works:
                     <br><em><b> 
                         All of the jobs below were performed accordingly to different calculation types, which include ORCA, Gaussian, VASP, and Lammps.
@@ -127,6 +103,9 @@
                     </ul>
                     <ul>
                         Zip needed calculation result and use POST to upload file to the distribution server.
+                    </ul>
+                    <ul>
+                        Additional judgement in case of normal termination for calculation(in pyslurm), but chemical irrationality structure as input.
                     </ul>
                     <ul>
                         Handle a series of situations including but not limited to:
@@ -147,15 +126,45 @@
                                 Calculation did not start correctly and was terminated right after being submitted with SLURM.
                             </li>
                             <li>
-                                Front end server offline
+                                Job distribution server offline
                             </li>
                             <li>
-                                Continuity when my program was accidentally stopped. All of the calculating jobs will back to normal as soon as restart my program. If there are calculation tasks that had been completed they will be uploaded to the distribution server as normal and the log will appear as normal. If there were a new calculation job it will be recognized and tracked. If there are calculation job that was submitted and completed while my program was not running their result will be upload to the distribution server normally as soon as my program start.
+                                Continuity when my program was accidentally stopped. .
                             </li>
 
                         </ul>
+                        <em>All of the calculating jobs will back to normal as soon as restart my program. If there are calculation tasks that had been completed they will be uploaded to the distribution server as normal and the log will appear as normal. If there were a new calculation job it will be recognized and tracked. If there are calculation job that was submitted and completed while my program was not running their result will be upload to the distribution server normally as soon as my program start. If there are job cancelation it will be handeled as soon as my program restart. If job distribution server offline, all of the calculation job will continue and if they are finised the result will be upload as soon as the distribution server back online.</em>
                     </ul>
-
+                </li>
+                <li>
+                    <b>Individual project:</b> writing script that find missing data set in database from id queries excle. Data filtering and aligning. Extracting 3D cartesian coordinate and get SMILE with Pybel(OpenBabel) python package. Creat and maintain SQL database. Entract data from xyz file, excle file, and coverted SMILE and insert it in to SQL database(including checking repeating data in database).
+                </li> 
+                <li>
+                    <b>Individual project:</b> creating automatically data preparation algorithm for ORCA(A calculation software in chemistry) on server.
+                </li>
+                <li>
+                    <b>Individual project:</b> creating automatically data collection algorithm from five files we got from ORCA calculation on the server. Including data synchronization from different files and error handling. The algorithm will try to solve the problem when an error is detected.
+                </li>
+                <li>
+                    <b>Individual project:</b> writing script that collecting specified data from user-specified folder.
+                </li>
+                <li>
+                    <b>Individual project:</b> attempting to writing script that convert FUNSMILE(our company's way of naming compound structure) to SMILE(a general chemistry structure naming). Company decide to stop this project after a week.
+                </li>
+                <li>
+                    <b>Individual project:</b> writing script that could communicate with chemistry experiment equipment remotely in the lab and control them to experiment. I used SOCKET and designed an algorithm that could check two-way connections automatically.
+                </li>
+                <li>
+                    <b>Individual project:</b> testing Psi4 calculation speed on the server with different threads and memory settings. Did polyfit to find mathematical minimum time and test hypothesis and wrote reports.
+                </li> 
+                <li>
+                    <b>Individual project:</b> writing script that filter and classify files. ZIP choosen file type and upload them to server with POST with login and token.
+                </li> 
+                <li>
+                    <b>Individual project:</b> Copy file with rename and data correction in coordinate files.
+                </li> 
+                <li>
+                    <b>Individual project:</b> Writing script that matching children calculaiton job with father calculaiton job. Some calculation job was misnamed and we would match it with coordinates information and funsmile naming.
                 </li> 
             </div>
             <div data-date="June 2019 – present">
