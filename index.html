@@ -23,6 +23,9 @@
         </div>
         <ul id="menu" class="shadow">
             <li>
+                <a href="#skills"><b style="font-size:15px">Skills</b></a>
+            </li>
+            <li>
                 <a href="#about"><b style="font-size:15px">About</b></a>
             </li>
             <li>
@@ -38,10 +41,7 @@
                 <a href="#projects"><b style="font-size:15px">Projects</b></a>
             </li>
             <li>
-                <a href="#skills"><b style="font-size:15px">Skills</b></a>
-            </li>
-            <li>
-                <a href="#about"><b style="font-size:15px">Effort In Diversity</b></a>
+                <a href="#projects"><b style="font-size:15px">Effort In Diversity</b></a>
             </li>
             <li>
                 <a href="#contact"><b style="font-size:15px">Contact</b></a>
@@ -52,6 +52,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1><b style="font-size:50px">Yutao Zhou</b></h1>
+            <h2><b style="font-size:30px">M.S. in Electrical Engineering at Columbia University</b></h2>
             <h2><b style="font-size:30px">B.S. in Physics at UC Santa Barbara</b></h2>
             <a href="CV.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
@@ -67,7 +68,31 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
-
+    <div id="skills">
+        <h2 class="heading"><b>SKILLS & PACKAGES</b></h2>
+        <ul>   
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Desk</li>
+            <li>Matplotlib</li>
+            <li>Request</li>
+            <li>Plotly</li>
+            <li>PyDesk</li>
+            <li>leafmap</li>
+            <li>GeoPy</li>
+            <li>HTML</li>
+            <li>MySQL</li>
+            <li>Shell script</li>
+            <li>MATLAB</li>
+            <li>Latex</li>
+            <li>Auto Desk CAD</li>
+            <li>EasyEDA</li>
+            <li>Shell Script</li>
+            <li>MS Office series</li>
+            <li>Digging into Python programming</li>
+        </ul>
+    </div>
     <div id="about">
         <div class="container">
             <div class="row">
@@ -76,7 +101,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I graduated in December 2021, two quarters earlier than the typical four-year schedule. I obtained my Bachelor of Science in Physics at UCSB. I will pursue a Master of Science degree in Electrical and Computer Engineering or Computer Science. I currentlly work as a Python intern at Deepchem, a chemistry reasearch company. With the belief that Physics is the discipline that studies how the universe functions, I chose Physics as my undergraduate major to lay a solid academic foundation. UCSB’s abundant educational resources allow me to explore broadly in the physical field, from fundamental physics to theoretical physics and experimental physics, while building my mathematical strength. In graduate school, I would love to learn programming and electronic knowledge. These would be the cornerstone for my future career plan. It would not be more fantastic if I could become an automobile electronics engineer both in the software and hardware aspect in the future to design automotive circuits freely and optimize car performance constantly. I am also passionate about AI, more specifically autonomous driving. With the advanced education I will get from your university and my effort, I will establish my dream company to change human life.
+                        I am a current graduate student at Columbia University persuing M.S. in Electrical Engineering. I obtained my Bachelor of Science in Physics at UCSB, two quarters earlier than the typical four-year schedule. I am currently looking for SDE or software developer intership for next fall. I have an independent project of an Used Car data visualization web application project. Also, I had worked as an python intern at a chemistry calculation company before.
                     </p>
                 </div>
             </div>
@@ -86,8 +111,38 @@
     <div id="experience" class="background-alt">
         <h2 class="heading"><b>WORK EXPERIENCE & EXTRACURRICULAR ACTIVITIES</b></h2>
         <div id="experience-timeline">
+            <div data-date="June 2022 – present">
+                <h3><b>Used Car Data Visualization Web Application</b></h3>
+                <h4>Independent Project</h4>
+                <li>
+                    Build a web application from the idea to rent a domain and host my web application.
+                </li>                
+                <li>
+                    Build with streamlit, handle large data set(365K data points) with <b>Desk</b>, <b>Pandas</b>, and <b>NumPy</b> for data filtering and cache data.
+                </li>
+                <li>
+                    Visualize data with scatter plot on map, heat map, pie chart, scatter plot with the trend line, using packages like <b>plotly</b>, <b>leafmap</b>, <b>pydeck</b>.
+                </li>
+                <li>
+                    Geo encoding and filter data with distance from user query location with geoencoder for <b>GeoPy</b>. 
+                </li>
+                <li>
+                    Login page with cookie. 
+                </li>
+                <li>
+                    Hosting my web application on a personal server with domain re-direction. 
+                </li>
+                <li>
+                    Successfully used google map API with <b>request</b> for geoencoding but abandoned because of the cost. 
+                </li>
+                <li>
+                    Successfully deployed my website to the google cloud platform with <b>docker</b> and <b>yaml</b> files but abandoned it because of the daily limit of the outgoing internet traffic for the app engine with the free account.
+                </li>
+                <li>
+                    Link: <a href="http://www.auto-showroom.com">Web Application</a> login with username: guest password: guest
+                </li>
+            </div>
             <div data-date="Feburary 2022 – present">
-
                 <h3><b>Deepchem Co., Ltd.</b></h3>
                 <h4>Python Intern</h4>
                                 <li>
@@ -96,13 +151,13 @@
                         All of the jobs below were performed accordingly to different calculation types, which include ORCA, Gaussian, VASP, and Lammps.
                     </em></b>
                     <ul>
-                        Use GET to check job status on platform and handle manue stop from user. While inclue a series of actions inclue stop job in SLURM.
+                        Use <b>GET</b> to check job status on the platform and handle manual stop from the user. While including a series of actions include stop job in <b>SLURM</b>.
                     </ul>
                     <ul>
-                        Use GET and POST to check front end job status and submit log content from calculation to distribution server in real-time.
+                        Use <b>GET</b> and <b>POST</b> to check front-end job status and submit log content from calculation to the distribution server in real-time
                     </ul>
                     <ul>
-                        Zip needed calculation result and use POST to upload file to the distribution server.
+                        Zip needed calculation results and use <b>POST</b> to upload files to the distribution server.
                     </ul>
                     <ul>
                         Additional judgement in case of normal termination for calculation(in pyslurm), but chemical irrationality structure as input.
@@ -120,10 +175,10 @@
                                 Manual cancel job from the server
                             </li>
                             <li>
-                                Missing calculation file(calculation files were uploaded from the user when they submit a job) 
+                                MMissing calculation file(calculation files were uploaded from the user when they submit a job)
                             </li>
                             <li>
-                                Calculation did not start correctly and was terminated right after being submitted with SLURM.
+                                The calculation did not start correctly and was terminated right after being submitted with SLURM
                             </li>
                             <li>
                                 Job distribution server offline
@@ -436,27 +491,8 @@
         </div>
     </div>
     <!-- End #projects -->
-    <div id="skills">
-        <h2 class="heading"><b>SKILLS & SPECIALTIES</b></h2>
-        <ul>   
-            <li>Python</li>
-            <li>MATLAB</li>
-            <li>Latex</li>
-            <li>Auto Desk CAD</li>
-            <li>EasyEDA</li>
-            <li>Shell Script</li>
-            <li>MS Office series</li>
-            <li>Chinese Mandarin (Native)</li>
-            <li>English (Proficiently fluent)</li>
-            <li>Golf</li>
-            <li>Bowling</li>
-            <li>Karting</li>
-            <li>Singing</li>
-            <li>Archery</li>
-            <li>Reading</li>
-            <li>Digging into Python programming</li>
-        </ul>
-    <div id="skills">
+
+    <div id="projects">
         <h2 class="heading"><b>EFFORT IN DIVERSITY</b></h2>
         <ul>   
             Once I shared an accommodation with a white and a black student for almost a year. I noticed that the white student rarely talked to his African American roommate; when he spoke, he spoke primarily to me. His intentional ignoring created a peculiar atmosphere in the dormitory and made the my colored brother very uncomfortable, who protested in his own way by avoiding communication with him. This experience of living in a multi-racial environment echoes what I learn from the book Invisible Man and my readings for the course BLST 36 such as The Bluest Eye. I have become fully aware that ethnic and racial discrimination does not necessarily take a vocal or manifest form. It could be expressed by silence, by actions that should be taken but are not, and most horribly, by pretending that the inequality does not exist. My personal experience always reminds me that despite being a ‘melting pot’, the US is haunted by the problem of racial inequality, even in California which is more liberal and with greater diversity.
@@ -479,9 +515,6 @@
         </li>
         <li style="color:whitesmoke;">
             Tel: +1 805-637-1617
-        </li>
-        <li style="color:whitesmoke;">
-            Portfolio Course Project:https://yutaozhouwriting2.weebly.com/
         </li>
         </b>
         <br>
