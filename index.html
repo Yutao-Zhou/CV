@@ -102,7 +102,9 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I am a current graduate student at Columbia University persuing M.S. in Electrical Engineering. I obtained my Bachelor of Science in Physics at UCSB, two quarters earlier than the typical four-year schedule. I am currently looking for SDE or software developer intership for next fall. I have an independent project of an Used Car data visualization web application project. Also, I had worked as an python intern at a chemistry calculation company before.
+                        Current Master of Science student at Columbia University in Electrical Engineering. I earned B.S. in Physics at UCSB. I am looking for an internship for the summer of 2023 as an SDE or DS.<br>
+                        I will take CS or data-related courses only at Columbia. In my spare time, I am focusing on using python and MySQL to solve real-world problems (e.g.My personal project of a used car analyzer web application).<br>
+                        As you can see I majored in Physics in my undergraduate study. I do believe this is what makes me unique. I have a strong mathematical foundation. I could not only think as an engineer but also as a physicist (e.g.BFS feels like water flow to me, more explicitly filling up a water pipe network). With all of the algorism and technology I am learning and have learned so far, I could create amazing products at your company.
                     </p>
                 </div>
             </div>
@@ -110,117 +112,76 @@
     </div>
     <!-- End #about -->
     <div id="experience" class="background-alt">
-        <h2 class="heading"><b>WORK EXPERIENCE & EXTRACURRICULAR ACTIVITIES</b></h2>
+        <h2 class="heading"><b>WORK EXPERIENCE & PERSONAL PROJECT</b></h2>
         <div id="experience-timeline">
-            <div data-date="June 2022 – present">
+            <div data-date="June 2022 – July 2022">
                 <h3><b>Used Car Data Visualization Web Application</b></h3>
                 <h4>Independent Project</h4>
                 <li>
-                    Build a web application from the idea to rent a domain and host my web application.
+                    Highlight outcome of different supervised, unsupervised, and bert-unsupervised ML model's key phrases output in business domain. Adjustable setting with customized natural language input. Total runtime under 1 second in general.
                 </li>                
                 <li>
-                    Build with streamlit, handle large data set(365K data points) with <b>Desk</b>, <b>Pandas</b>, and <b>NumPy</b> for data filtering and cache data.
-                </li>
-                <li>
-                    Visualize data with scatter plot on map, heat map, pie chart, scatter plot with the trend line, using packages like <b>plotly</b>, <b>leafmap</b>, <b>pydeck</b>.
-                </li>
-                <li>
-                    Geo encoding and filter data with distance from user query location with geoencoder for <b>GeoPy</b>. 
-                </li>
-                <li>
-                    Login page with cookie. 
-                </li>
-                <li>
-                    Hosting my web application on a personal server with domain re-direction. 
-                </li>
-                <li>
-                    Successfully used google map API with <b>request</b> for geoencoding but abandoned because of the cost. 
-                </li>
-                <li>
-                    Successfully deployed my website to the google cloud platform with <b>docker</b> and <b>yaml</b> files but abandoned it because of the daily limit of the outgoing internet traffic for the app engine with the free account.
-                </li>
-                <li>
-                    Link: <a href="http://www.auto-showroom.com">Web Application</a> login with username: guest password: guest
+                    Link to web application: <a href="http://128.111.106.229:8502">Key Phrase Extraction Web Application</a>.
                 </li>
             </div>
-            <div data-date="Feburary 2022 – present">
+            <div data-date="June 2022 – July 2022">
+                <h3><b>Used Car Data Visualization Web Application</b></h3>
+                <h4>Independent Project</h4>
+                <li>
+                    Build with streamlit, dealing large data set(365K data points) with Desk, Pandas, and NumPy for data filtering and cache data.
+                </li>                
+                <li>
+                    Visualize data with scatter plot on heat map (with more than 100 selectable base maps), pie chart, scatter plot with trend line, with packages e.g. plotly, leafmap, pydeck.
+                </li>
+                <li>
+                    Added VIN lookup function with Get from NHTSA (National Highway Traffic Safety Administration)'s API.
+                </li>
+                <li>
+                     Designed AI key phrase extraction from listing description with spacy, and visualization with wordcloud with VIN query results (VIN query, key phrase generation, and word cloud should take less than 5 seconds, usually 2 seconds).
+                </li>
+                <li>
+                    Implemented geocoding and filtering data with user input distance from user query location with geoencoder in GeoPy (Entire query should take 3 seconds depends on setting usually less than 0.5 second).
+                </li>
+                <li>
+                     Added Login page with cookie. Hosting web application on a personal server with domain re-direction (2 month so far without offline or interference).
+                </li>
+                <li>
+                    Tested google map API with REQUEST for geocoding but abandoned for cost ($5 per 1000 query).
+                </li>
+                <li>
+                    Deployed website to google cloud platform with docker and yaml files but abandoned it for daily limit of outgoing internet traffic for app engine with free account.
+                </li>
+                <li>
+                    Link to web application: <a href="http://www.auto-showroom.com">Used Car Data Visualization Web Application</a> login with (username: guest password: guest).
+                </li>
+            </div>
+            <div data-date="Feburary 2022 – May 2022">
                 <h3><b>Deepchem Co., Ltd.</b></h3>
                 <h4>Python Intern</h4>
-                                <li>
-                    <b>Group project:</b> create calculation task distribution systems. Work with the front end, and other co-walkers to create a web-based platform that would distribute calculation jobs from the distribution server to different calculation servers based on calculation servers status (Thread usage) and the number of threads that the user declared when submitting task. <br>I am in charge of all the work after the calculation job started. More specifically the following works:
-                    <br><em><b> 
-                        All of the jobs below were performed accordingly to different calculation types, which include ORCA, Gaussian, VASP, and Lammps.
-                    </em></b>
-                    <ul>
-                        Use <b>GET</b> to check job status on the platform and handle manual stop from the user. While including a series of actions include stop job in <b>SLURM</b>.
-                    </ul>
-                    <ul>
-                        Use <b>GET</b> and <b>POST</b> to check front-end job status and submit log content from calculation to the distribution server in real-time
-                    </ul>
-                    <ul>
-                        Zip needed calculation results and use <b>POST</b> to upload files to the distribution server.
-                    </ul>
-                    <ul>
-                        Additional judgement in case of normal termination for calculation(in pyslurm), but chemical irrationality structure as input.
-                    </ul>
-                    <ul>
-                        Handle a series of situations including but not limited to:
-                        <ul>
-                            <li>
-                                Unexpected termination of calculation on calculation server
-                            </li>
-                            <li>
-                                Manual stop or delete from the user
-                            </li>
-                            <li>
-                                Manual cancel job from the server
-                            </li>
-                            <li>
-                                MMissing calculation file(calculation files were uploaded from the user when they submit a job)
-                            </li>
-                            <li>
-                                The calculation did not start correctly and was terminated right after being submitted with SLURM
-                            </li>
-                            <li>
-                                Job distribution server offline
-                            </li>
-                            <li>
-                                Continuity when my program was accidentally stopped
-                            </li>
-                        </ul>
-                        <em>All of the calculating jobs will back to normal as soon as restart my program. If there are calculation tasks that had been completed they will be uploaded to the distribution server as normal and the log will appear as normal. If there were a new calculation job it will be recognized and tracked. If there are calculation job that was submitted and completed while my program was not running their result will be uploaded to the distribution server normally as soon as my program start. If there are job cancellation  they will be handled as soon as my program restart. If the job distribution server is offline, all of the calculation jobs will continue, and if they are finished the result will be uploaded as soon as the distribution server is back online.</em>
-                    </ul>
+                <li>
+                    Designed and built calculation task distribution systems. Distributing calculation jobs from distribution server to different calculation servers (Group project, 4 people in total (including one manager)).
                 </li>
                 <li>
-                    <b>Individual project:</b> writing script that find missing data set in database from id queries csv. Data filtering and aligning. Extracting 3D cartesian coordinate and get SMILE with Pybel(OpenBabel) python package. Creat and maintain SQL database. Entract data from xyz file, csv file, and coverted SMILE and insert it in to SQL database(including checking repeating data in database).
-                </li> 
-                <li>
-                    <b>Individual project:</b> creating automatically data preparation algorithm for ORCA(A calculation software in chemistry) on server.
+                    Communicated and collaborated with front-end, and other co-walkers to create web-based platform. Represented team to communicate with manage Finished building in 1 month.
                 </li>
                 <li>
-                    <b>Individual project:</b> creating automatically data collection algorithm from five files we got from ORCA calculation on the server. Including data synchronization from different files and error handling. The algorithm will try to solve the problem when an error is detected.
+                    Checked job status on platform and handled manual stop from user with GET. Handling exceptional cases e.g. distribution server offline. Stress tested on all 4 calculation servers.
                 </li>
                 <li>
-                    <b>Individual project:</b> writing script that collecting specified data from user-specified folder.
+                    Checked front-end job status and submitted log content from calculation to distribution server in real-time with GET and POST. Zip needed calculation results and uploaded files to distribution server with POST (up to 10 jobs in real life).
                 </li>
                 <li>
-                    <b>Individual project:</b> attempting to writing script that convert FUNSMILE(our company's way of naming compound structure) to SMILE(a general chemistry structure naming). Company decide to stop this project after a week.
+                    Increased overall calculation efficiency by 50% - 200% (By keeping calculation servers busy on none business hours).
                 </li>
                 <li>
-                    <b>Individual project:</b> writing script that could communicate with chemistry experiment equipment remotely in the lab and control them to experiment. I used SOCKET and designed an algorithm that could check two-way connections automatically.
+                    Created algorithms to find missing data set in database from id queries CSV. Data filtering and aligning. Extract 3D Cartesian coordinate and get SMILE with Pybel(OpenBabel) python package.
                 </li>
                 <li>
-                    <b>Individual project:</b> testing Psi4 calculation speed on the server with different threads and memory settings. Did polyfit to find mathematical minimum time and test hypothesis and wrote reports.
-                </li> 
+                     Constructed and maintain SQL database. Extract data from XYZ file, CSV file, and converted SMILE and insert it into SQL database(including checking repeating data in database)(Individual project).
+                </li>
                 <li>
-                    <b>Individual project:</b> writing script that filter and classify files. ZIP choosen file type and upload them to server with POST with login and token.
-                </li> 
-                <li>
-                    <b>Individual project:</b> Copy file with rename and data correction in coordinate files.
-                </li> 
-                <li>
-                    <b>Individual project:</b> Writing script that matching children calculaiton job with father calculaiton job. Some calculation job was misnamed and we would match it with coordinates information and funsmile naming.
-                </li> 
+                    Developed an algorithm to audit two-way connections between PC and lab equipment automatically with SOCKET (Individual project finished in 1 day).
+                </li>
             </div>
             <div data-date="June 2019 – present">
 
