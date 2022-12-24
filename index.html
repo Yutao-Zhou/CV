@@ -48,8 +48,8 @@
             <h1><b style="font-size:50px">Yutao Zhou</b></h1>
             <h2><b style="font-size:30px">M.S. in Electrical Engineering at Columbia University</b></h2>
             <h2><b style="font-size:30px">B.S. in Physics at UC Santa Barbara</b></h2>
-            <a href="Yutao_Zhou_Resume_SDE_Final.pdf" class="btn-rounded-white">Download Resume</a>
-            <a href="CV.pdf" class="btn-rounded-white">Download CV</a>
+            <a href="files/Yutao_Zhou_Resume_SDE_Final.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="files/CV.pdf" class="btn-rounded-white">Download CV</a>
         </div>
         <!-- End #lead-content -->
 
@@ -67,6 +67,8 @@
         <h2 class="heading"><b>SKILLS & PACKAGES</b></h2>
         <ul>   
             <li>Python</li>
+            <li>Flask</li>
+            <li>Threading</li>
             <li>Pandas</li>
             <li>NumPy</li>
             <li>Desk</li>
@@ -305,9 +307,12 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>NLP Model's Comparison in Key Phrase Extraction Web Application</b></h3>
-                        <h4>Coorperate Projects
+                        <h4>Coorperate Projects</h4>
                         <li>
                             Link to web application: <a href="http://128.111.106.229:8502">Key Phrase Extraction Web Application</a>.
+                        </li>
+                        <li>
+                            For detials please see 'WORK EXPERIENCE & PERSONAL PROJECT' section above.
                         </li>
                     </div>
                     <!-- End .project-info -->
@@ -320,9 +325,12 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>Used Car Data Visualization Web Application</b></h3>
-                        <h4>Idependent Projects
+                        <h4>Idependent Projects</h4>
                         <li>
                             Link to web application: <a href="http://www.auto-showroom.com">Used Car Data Visualization Web Application</a> login with (username: guest password: guest).
+                        </li>
+                        <li>
+                            For detials please see 'WORK EXPERIENCE & PERSONAL PROJECT' section above.
                         </li>
                     </div>
                     <!-- End .project-info -->
@@ -339,14 +347,26 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Keyphrase.png" width="300" height="300"/>
+                        <img src="images/Adaptive_Bitrate_Video_Streaming.png" width="300" height="300"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>Adaptive Bitrate Video Streaming</b></h3>
-                        <h4>Individual Course Project
+                        <h4>Individual Course Project: CSEE 4119 Computer Network</h4>
                         <li>
-                            
+                            The goal of this project is to make all users able to play video smoothly with changing internet through put.
+                        </li>
+                        <li>
+                            Create a proxy that would be listening(as a server) customer's request(user using browser), continuously calculating the customer's throughput, and requesting video chunks with a suitable bitrate(as a customer) from the video server.
+                        </li>
+                        <li>
+                            Use TCP welcome socket, connection socket, and threading to handle multiple users' streaming at the same time.
+                        </li>
+                        <li>
+                            Note: The course policy do not allow sharing simpecific code and reports online.
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/Vh6L8rUFR2Y">Click Here</a> to see a demo of my proxy on YouTube.
                         </li>
                     </div>
                     <!-- End .project-info -->
@@ -354,14 +374,23 @@
                 <!-- End .project -->
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Used_Car.png" width="300" height="300"/>
+                        <img src="images/own_internet.png" width="300" height="300"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>My Own internet</b></h3>
-                        <h4>Individual Course Project
+                        <h4>Individual Course Project: CSEE 4119 Computer Network</h4>
                         <li>
-                            
+                            Configure OSPF and iBGP to connect 8 routers and 6 hosts in my Autonomous System.
+                        </li>
+                        <li>
+                            Configure eBGP to perform different routing policies for inter-AS connection with my provider, customer, and peers. e.g. Achieved no valley routing. Achieved preferred customer routing(preference in this order: customer, peer, provider). Inbound traffic engineering: prefer traffic coming from one link of a provider(that has multiple links). Guide traffic to prefer coming from one provider over others.
+                        </li>
+                        <li>
+                            Successfully fatched data across internet(with working policy) formed with my class mates.
+                        </li>
+                        <li>
+                            Note: The course policy do not allow sharing simpecific content, code and reports online.
                         </li>
                     </div>
                     <!-- End .project-info -->
@@ -369,14 +398,32 @@
                 <!-- End .project -->
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Used_Car.png" width="300" height="300"/>
+                        <img src="images/mbti.png" width="300" height="300"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3><b>Personality Analysis</b></h3>
-                        <h4>Coorperate Course Project
+                        <h3><b>MBTI Personality Analysis and Prediction</b></h3>
+                        <h4>Coorperate Course Project: EECS 6893 Big Data Analysis</h4>
                         <li>
-                            
+                            Link to our web application: <a href="http://34.23.131.207:5000/">Click Here</a>.
+                        </li>
+                        <li>
+                            Created a Web application that could use users Tweets to predict their personality.
+                        </li>
+                        <li>
+                            Trained a machine learning model using MBTI personality dataset.
+                        </li>
+                        <li>
+                            We used Flask as backend and HTML, CSS as frontend. When user enter their username we would fatch user's Tweets using Twitter API(tweepy). Then we would process fatched data and use pretrained model to make prediction. Then we would present corresponding results to user.
+                        </li>
+                        <li>
+                            For details pleas check out my final report <a href="files/EECS6893_Big_Data_Analysis_Final_Report.pdf">here</a>.
+                        </li>
+                        <li>
+                            Link to GitHub repostory for all of the code:<a href="https://github.com/Yutao-Zhou/EECS_6893_Big_Data_Analytics/tree/main/Finala_Project_Web_Application">Click Here</a>.
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/aFgrYO8kDU4">Click Here</a> to view our final presentation on YouTube.
                         </li>
                     </div>
                     <!-- End .project-info -->
@@ -384,14 +431,23 @@
                 <!-- End .project -->
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/Used_Car.png" width="300" height="300"/>
+                        <img src="images/attention.png" width="300" height="300"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>Swim Transformer Paper Reimplimentation</b></h3>
-                        <h4>Individual Course Project
+                        <h4>Individual Course Project: ECBM 4040 Deep Learning and Neural Network</h4>
                         <li>
-                            
+                            Replicated the entire Swin Transformer architecture.
+                        </li>
+                        <li>
+                            Tested my model on CIFAR-100 achieved accuracy of 46.7%.
+                        </li>
+                        <li>
+                            For details pleas check out my final report <a href="files/E4040_2022Fall_DLNN_report_yz4359.pdf">here</a>.
+                        </li>
+                        <li>
+                            Note: The course policy do not allow open source for my code. But, I do have all of the code on private Github Repostory.
                         </li>
                     </div>
                     <!-- End .project-info -->
@@ -404,7 +460,7 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>Analog Electronics Laboratories</b></h3>
-                        <h4>PHYS 127AL Course Projects
+                        <h4>PHYS 127AL Course Projects</h4>
                         <li>
                             Designed circuits to switch and amplify the input wave with a common-emitter amplifier, a differential amplifier, or an operational amplifier, respectively
                         </li>
@@ -425,7 +481,7 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>Introduction to Scientific Computing Laboratories</b></h3>
-                        <h4>PHYS 129L Course Projects
+                        <h4>PHYS 129L Course Projects</h4>
                         <li>
                             Mastered the Dictionary in Python, string processing, error handling, inheritance, and derived Julian Day based on the inpu
                         </li>
@@ -449,7 +505,7 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3><b>Auroral Morphology Classification Based on Unsupervised Clustering</b></h3>
-                        <h4>Advisor: Prof. Ziming Zou (National Space Science Center, CAS)
+                        <h4>Advisor: Prof. Ziming Zou (National Space Science Center, CAS)</h4>
                         <li>
                             Familiarized with the principle of unsupervised clustering algorithm and the process details of KNN algorithm and K-means algorithm
                         </li>
@@ -509,8 +565,8 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2022 YUTAO ZHOU
-                        <br>Most images on this site are owned by me or it is public domine images. If there is any concern with the copyright please do not hesitate to contact me.
+                        Copyright &copy; 2023 YUTAO ZHOU
+                        <br>All images on this site are owned by me. I do reserve all of the copy right of all content on this website. Please contact me before using any content.
                         <br>This site is not perfect, but I am trying my best to make it fabulous and practical for the limited time I have.
                     </p>
                 </div>
